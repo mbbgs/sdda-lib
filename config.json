@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "name": "",
+    "version": ""
+  },
+  "rules": {
+    "auto-reconnect": false,
+    "whitelist-peers": false,
+    "rtt": false,
+    "max-whitelist": 5
+  }
+}
