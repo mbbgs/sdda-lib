@@ -1,12 +1,13 @@
 {
   "metadata": {
-    "name": "",
+    "name": "Sddslib",
+    "vName":"",
     "version": ""
   },
   "rules": {
-    "auto-reconnect": false,
-    "whitelist-peers": false,
-    "rtt": false,
-    "max-whitelist": 5
+    "rtt": 0,
+    "protocol":"tcp",
+    "max-retry-conn":5,
+    "enable_rtt":false
   }
 }

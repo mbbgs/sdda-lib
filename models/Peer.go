@@ -4,7 +4,7 @@ import (
 	"runtime"
 
 	"github.com/mbbgs/sdds-lib/utils"
-	"github.com/mbbgs/crypto"
+crypto	"github.com/mbbgs/sddscrypto"
 )
 
 type Peer struct {
@@ -19,6 +19,8 @@ type Peer struct {
 	PeerPubSessionKey  []byte
 	PeerPrivSessionKey []byte
 }
+
+
 
 // NewPeer creates a new Peer instance with generated keys and system metadata.
 func NewPeer(peerRole, port string) (*Peer, error) {

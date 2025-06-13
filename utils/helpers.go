@@ -70,3 +70,15 @@ func FormatDistance(metres float64) string {
     }
     return fmt.Sprintf("%.2f metres", metres)
 }
+
+
+
+// Jitter returns a randomized duration between [0.5x, 1.5x] of the base
+func Jitter(d time.Duration) time.Duration {
+	jitterFactor := 0.5 + rand.Float64() // 0.5 to 1.5
+	return time.Duration(float64(d) * jitterFactor)
+}
+
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}
